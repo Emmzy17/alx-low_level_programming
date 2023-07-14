@@ -4,7 +4,6 @@
 /**
  * main - Entry point
  * Description: 'Shows if a number is positve or negative'
- * @parameter: n 
  * Return: Always 0 (Success)
  */
 int main(void)
