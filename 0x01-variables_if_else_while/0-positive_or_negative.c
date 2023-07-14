@@ -1,11 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/**
- * File_name : 0-positive_of_negative
- * Authour : Emmanuel Adoyi
- */
 /**
  * Main : this function checks whether a random number is positivee or negative or zero
  * Parameters : N is a random number integer
@@ -17,7 +12,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	if (n < 0)
 	{
 		printf("%d is negative\n", n);
