@@ -3,13 +3,11 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * 
  * Description: 'Shows if a number is positve or negative'
  * @parameter: n is a random integer value
  * 
  * Return: Always 0 (Success)
  */
-                
 int main(void)
 {
 	int n;
