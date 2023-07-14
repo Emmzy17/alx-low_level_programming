@@ -11,7 +11,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	/*
+	/**
 	 * Main : this function checks whether a random number is positive
 	 *
 	 * Prints: N is positive or negative or zero
