@@ -2,14 +2,16 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main : this function checks whether a random number is positivee or negative or zero
+ * Main : this function checks whether a random number
+ * is positivee or negative or zero
  * Parameters : N is a random number integer
  * Return: 0- Success
- */                
+*/                
 int main(void)
 {
 	int n;
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
