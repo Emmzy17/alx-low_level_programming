@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char alpha[] = "zyxwvutsrqponmlkjihgedcba";
+	char alpha[] = "zyxwvutsrqponmlkjihgfedcba";
 	int i;
 
 	for (i = 0; alpha[i] != '\0'; i++)
