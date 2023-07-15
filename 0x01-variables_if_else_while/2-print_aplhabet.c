@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+	char alphabet = 'a';
+	for (alphabet = 'a'; alphabet = 'z'; alphabet++)
+	{
+		putchar(alphabet);
+	}
+
+	return 0;
+}
