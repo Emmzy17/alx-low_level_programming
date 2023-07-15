@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+
 /**
  * main - Entry point
  * Description: 'Prints Alphabetical characters'
@@ -11,7 +11,7 @@ int main()
 	
 	int i;
 	
-	for ( i = 0; alpha[i] = '\0'; i++)
+	for ( i = 0; alpha[i]== '\0'; i++)
 	{
 		putchar(alpha[i]);
 	}	
