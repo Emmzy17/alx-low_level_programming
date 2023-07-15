@@ -11,7 +11,7 @@ int main()
 	
 	int i;
 	
-	for ( i = 0; i < strlen(alpha); i++)
+	for ( i = 0; alpha[i] = '\0'; i++)
 	{
 		putchar(alpha[i]);
 	}	
