@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * main - Entry point
- * Description: 'Prints Digit combination' 
+ * Description: 'Prints Digit combination'
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -17,8 +17,7 @@ int main(void)
 		{
 			putchar(44);
 			putchar(32);
-		}
-		
+		}	
 	}
 	putchar('\n');
 	return (0);
