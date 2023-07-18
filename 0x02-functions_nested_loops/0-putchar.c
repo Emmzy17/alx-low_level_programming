@@ -3,11 +3,11 @@
 int main(void)
 {
 	int i;
-	char putchar[] = "_putchar";
+	char putchar[] = "_putchar\n";
 	for(i=0; putchar[i] != '\0'; i++)
 	{
 		_putchar(putchar[i]);
 	}
-	_putchar('\n');
+
 	return 0;
 }
