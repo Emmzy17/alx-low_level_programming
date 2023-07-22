@@ -1,9 +1,8 @@
-include "main.h"
+#include "main.h"
 /**
  * print_number - prints an integer
  * @n:.input integer
- *
- *Owned by Shakzy/Emmanuel Adoyi
+ * return: 0 
  */
 void print_number(int n)
 {
