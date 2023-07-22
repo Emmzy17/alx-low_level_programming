@@ -2,7 +2,8 @@
 /**
  * print_number - prints an integer
  * @n:.input integer
- * return: 0 
+ *
+ * Owned_by: Shakzy/Emmanuel Adoyi
  */
 void print_number(int n)
 {
