@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 Prints every other character of a string
- * @s: char to print
+ * @str: char to print
  * Return: 0 is sucess
  */
 
