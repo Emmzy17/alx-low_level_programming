@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _strlen - Gets the lenght of a string
- * @S - pointer to the stack section of the string
+ * @s:  pointer to the stack section of the string
  * Return: 0 is alwats sucess
  */
 
