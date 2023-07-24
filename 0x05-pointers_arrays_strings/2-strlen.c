@@ -17,7 +17,6 @@ int _strlen(char *s)
 		count++;
 		s++;
 	}
-	printf("%d", count);
-	return (0);
+	return (count);
 }
 
