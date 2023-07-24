@@ -1,17 +1,15 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen - Gets the lenght of a string 
- * @s - pointer to the stack section of the string 
- * Return: 0 is alwats sucess 
+ * _strlen - Gets the lenght of a string
+ * @S - pointer to the stack section of the string
+ * Return: 0 is alwats sucess
  */
 
 int _strlen(char *s)
 {
-	int count;
-	
-	count = 0;
-	
+	int count = 0;
+
 	while (*s != '\0')
 	{
 		count++;
