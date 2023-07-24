@@ -6,6 +6,6 @@
 
 void rev_string(char *s)
 {
-	_puts(char *s);
-	print_rev(char *s);
+	_puts(s);
+	print_rev(s);
 }
