@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - Prints half of a string
- * @s: String pointer
+ * @str: String pointer
  * Return: 0 is sucess
  */
 
@@ -18,7 +18,7 @@ void puts_half(char *str)
 	else
 	{
 		n = index / 2;
-	}		
+	}
 	n++;
 	for (index = n; str[index] != '\0'; index++)
 	{
