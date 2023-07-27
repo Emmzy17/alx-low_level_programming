@@ -6,7 +6,7 @@
  * Return: A string
  */
 
-char *_strcat(*dest, *src)
+char *_strcat(char *dest,char  *src)
 {
 	char *s = dest;
 	
