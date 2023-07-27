@@ -18,6 +18,6 @@ char *_strcat(*dest, *src)
 		length++;
 		index++;
 	dest[length] = '\0';
-	return (concat);
+	return (desr);
 }
 
