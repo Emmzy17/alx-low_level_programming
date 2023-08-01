@@ -1,6 +1,5 @@
 #include "main.h"
-/*_memset - fills the first n bytes of the memory area pointed to by s 
- * with a constant byte b
+/* _memset - fills the first n bytes of the memory area pointed to by s
  * @s: pointer to string address
  * @b: constant byte
  * @n: n-bytes of memory
@@ -15,6 +14,5 @@ char *_memset(char *s, char b, unsigned int n)
 		*s = b;
 		s++;
 	}
-	*s = '\n';
 	return (s); 
 }
