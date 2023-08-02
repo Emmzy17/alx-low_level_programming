@@ -9,6 +9,7 @@
  * 
  * Return: character pointer
  */
+
 char *_strchr(char *s, char c)
 {
 	while (*s)
