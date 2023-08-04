@@ -2,25 +2,25 @@
 #include <stdlib.h>
 
 /**
- * main - multiply two argument
+ * main - multiplies two numbers.
  * @argc: argument count
- * @argv: arguements
+ * @argv: arguments
  *
  * Return: 0 is sucess
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int arg1 = strtol( argv[1], NULL, 10);
-	int arg2 = strtol( argv[2], NULL, 10);
-	
-	if (argc > 3 || argc < 3)
-	{	
-		printf("Error");
+	int arg1, arg2;
+
+	if (argc < 3)
+	{
+		printf("Error\n");
 		return (1);
 	}
 
-	(void)argc;
-
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[2]);
 	printf("%d\n", arg1 * arg2);
-	return(0);
+
+	return (0);
 }
