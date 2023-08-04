@@ -8,7 +8,7 @@
  * @argv: arguments
  * Return: 0
  */
-int main(int argc, char **argvi[])
+int main(int argc, char *argv[])
 {
 	int total, count;
 	unsigned int i;
