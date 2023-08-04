@@ -4,8 +4,7 @@
  * main - prints all arguements it recieves
  * @argc - arguement count
  * @argv - arguements
- *
- * Return: 0
+  * Return: 0
  */
 int main(int argc, char *argv[])
 {
