@@ -5,9 +5,9 @@
  * @argc: Counts the command line arguements
  * @argv: stores the command line arguements
  *
- * Return: 0 is success
+ * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	void(argc);
 
