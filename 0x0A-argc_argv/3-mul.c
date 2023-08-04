@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 	}
 
 	(void)argc;
+
 	printf("%d\n", arg1 * arg2);
 	return(0);
 }
