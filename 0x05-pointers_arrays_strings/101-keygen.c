@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define TARGET_SUM 2772
+#define MAX_ASCII 126
+#define MIN_ASCII 33
+
 /**
  * main - Generates random valid passwords for the
  *        program 101-crackme.
@@ -10,46 +14,16 @@
  */
 int main(void)
 {
-	char password[84];
-	int index = 0, sum = 0, diff_half1, diff_half2;
-	
-	srand(time(0));
+    srand(time(0));
+    int sum = 0;
+    while(sum < TARGET_SUM - MAX_ASCII) // continue until adding another character won't overshoot
+    {
+        char ch = MIN_ASCII + rand() % (MAX_ASCII - MIN_ASCII + 1);
+        sum += ch;
+        putchar(ch);
+    }
 
-	while (sum < 2772)
-	{   
-		password[index] = 33 + rand() % 94; 
-		sum += password[index++];
-	}   
-
-    	password[index] = '\0';
-
-	if (sum != 2772)
-    	{   
-		diff_half1 = (sum - 2772) / 2;
-		diff_half2 = (sum - 2772) / 2;
-		if ((sum - 2772) % 2 != 0)
-			diff_half1++;
-
-		for (index = 0; password[index]; index++)
-		{
-			if (password[index] >= (33 + diff_half1))
-			{
-				password[index] -= diff_half1;
-				break;
-			}
-		}
-		for (index = 0; password[index]; index++)
-		{
-			if (password[index] >= (33 + diff_half2))
-			{
-				password[index] -= diff_half2;
- 				break;
-			}
-		}
-	}   
-
-	printf("%s", password);
-
-	return (0);
+    // Ensure sum reaches target by picking last character specifically
+    putchar(TARGET_SUM - sum);
+    return 0;
 }
-
