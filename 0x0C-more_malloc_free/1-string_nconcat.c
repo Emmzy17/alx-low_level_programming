@@ -15,12 +15,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *temp_s1 = s1;
 	char *temp_s2 = s2;
 
-	while(*s1)
+	while(*temp_s1)
 	{
 		length_of_s1++;
 		temp_s1++;
 	}
-	while(*s2)
+	while(*temp_s2)
 	{	
 		length_of_s2++;
 		temp_s2++;
