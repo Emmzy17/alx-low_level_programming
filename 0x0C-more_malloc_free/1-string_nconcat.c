@@ -10,13 +10,21 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int length_of_s1, length_of_s2, i, j;
+	unsigned int length_of_s1 = 0, length_of_s2 = 0, i, j;
 	char *result;
+	char *temp_s1 = s1;
+	char *temp_s2 = s2;
 
 	while(*s1)
+	{
 		length_of_s1++;
+		temp_s1++;
+	}
 	while(*s2)
+	{	
 		length_of_s2++;
+		temp_s2++;
+	}
 	if (n >= length_of_s2)
 		n = length_of_s2;
 
