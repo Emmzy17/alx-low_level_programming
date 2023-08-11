@@ -9,14 +9,16 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	unsigned int total_size = nmemb * size;
-	unsigned char *ptr = (unsigned char *)malloc(total_size);
+	unsigned int total_size;
+	unsigned char *ptr;
 	unsigned int i;
 	
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 	
+	total_size = nmemb * size;
+	ptr = (unsigned char *)malloc(total_size);
+
 	if (!ptr)
 	{
 		return (NULL);
