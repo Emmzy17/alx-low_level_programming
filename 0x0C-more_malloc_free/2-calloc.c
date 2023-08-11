@@ -9,19 +9,20 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	unsigned int total_size = nmemb * size;
+	unsigned char *ptr = (unsigned char *)malloc(total_size);
+	unsigned int i;
+	
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	
-	unsigned int total_size = nmemb * size;
-
-	void *ptr = malloc(total_size);
-
 	if (!ptr)
 	{
 		return (NULL);
 	}
 
-	memset(ptr, 0, total_size);
+	for (i = 0; i < total_size; i++)
+		ptr[i] = 0;
 
-	return (ptr);
+	return (void *)ptr;
 }
