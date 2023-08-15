@@ -7,13 +7,6 @@
  */
 int main(void)
 {
-	int i;
-	int j;
-
-	while (__FILE__)
-		i++
-	for (j = 0; j < i; j++)
-		_putchar(j);
-	_putchar('\n');
+	printf("%s\n", __FILE__);
 	return (0);
 }
