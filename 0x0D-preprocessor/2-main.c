@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * 2-main - this functions prints the file it was compiled from
+ * main - this functions prints the file it was compiled from
  *
  * Return:0
  */
