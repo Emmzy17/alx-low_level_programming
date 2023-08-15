@@ -6,6 +6,7 @@
  * @name: Name of the dog
  * @age: Age of the dog
  * @owner: owner of the dog
+ * Return: Dog struct
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -19,6 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->name = strdup(name);
 	if (!dog->name)
 	{
+		free(dog);
 		return (NULL);
 	}
 
