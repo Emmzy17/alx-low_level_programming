@@ -8,7 +8,9 @@
  */
 void print_opcodes(const char *a, int n)
 {
-	for (int i = 0; i < n; i++)
+	int i;
+
+	for (i = 0; i < n; i++)
 	{
 		printf("%02hhx", a[i]);
 		if (i < n - 1)
