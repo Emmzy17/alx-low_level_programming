@@ -3,12 +3,15 @@
 #include <stdlib.h>
 /**
  * main - performs arithmetics based on the argurement
+ * @argc: arguement count
+ * @argv: araray of arguements
  * Return: int
  */
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*operation)(int, int);
+
 	if (argc != 4)
 	{
 		return (1);
@@ -17,7 +20,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	operation = get_op_func(argv[2]);
 
-	if (!operation) 
+	if (!operation)
 	{
 		printf("Error\n");
 		return (2);
