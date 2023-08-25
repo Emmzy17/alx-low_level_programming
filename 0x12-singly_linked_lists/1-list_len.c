@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * size_t list_len - returns the number of elements in a linked list
+ * list_len - returns the number of elements in a linked list
  * @h: node struct
  * Return: length of list
  */
