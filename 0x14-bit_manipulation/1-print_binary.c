@@ -18,14 +18,14 @@ void print_binary(unsigned long int n)
 	{
 		if ((n & mask))
 		{
-			_putchar("1");
-			started = 1
+			_putchar('1');
+			started = 1;
 		}
 		else if (started)
 		{
 			_putchar('0');
 		}
 
-		mask >>= 1'
+		mask >>= 1;
 	}
 }
